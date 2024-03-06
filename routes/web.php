@@ -1,18 +1,23 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\logincontroller;
+use App\Http\Controllers\registercontroller;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('dashboard');
+=======
+
+Route::get('/', function() { 
+    return view('welcome');
+>>>>>>> ce273e6d675857d0547d69aa9df3f1d750b08794
 });
+
+Route::get('/view/login', function () {
+    return view('login');
+});
+
+Route::get('/login', [logincontroller::class, 'login']);
+Route::get('/register', [registercontroller::class, 'register']);
