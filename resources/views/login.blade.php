@@ -1,54 +1,40 @@
+<!doctype html>
 <html>
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @vite('resources/css/app.css')
 </head>
 <body>
-  <div class="flex h-screen">
-  <!-- Left Pane -->
-  <div class="w-1/2 bg-blue-300">
-  
-    <!-- Content for Left Pane -->
-    <div class="p-4">
-      <img class="mx-auto h-auto w-auto justify-items-center" src="{{ asset('images/logo.png') }}">
-      <h1 class="mt-0 text-center text-4xl font-bold font-serif">Glowink Store</h1>
-    </div>
-  </div>
+ 
+</body>
+</html><div class="flex items-center justify-center min-h-screen bg-blue-100">
+    <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+        <div class="flex justify-center">
+        <img src="images/logo.png" class="w-64 h-auto"  alt="gambar3">
 
-  <!-- Right Pane -->
-  <div class="w-1/2 bg-white">
-    <!-- Content for Right Pane -->
-  
-    <div class="container flex h-screen items-center justify-center ">
-    <div class="border rounded-lg p-24 mx-auto bg-blue-300">
-      <form class="space-y-6" action="#" method="POST">
-        <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
-          <div class="mt-2">
-            <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
         </div>
-  
-        <div>
-          <div class="flex items-center justify-between">
-            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
-            <div class="text-sm">
+        <h3 class="text-2xl font-bold text-center">LOGIN</h3>
+        <form action="">
+            <div class="mt-4">
+                <div>
+                    <label class="block" for="email">Email<label>
+                            <input type="text" placeholder="Email"
+                                class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                            <span class="text-xs tracking-wide text-red-600">Email field is required </span>
+                </div>
+                <div class="mt-4">
+                    <label class="block">Password<label>
+                            <input type="password" placeholder="Password"
+                                class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                </div>
+                <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
+                  </div>
+                  <button type="submit" class="w-full text-black bg-pink-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+                  <p class="text-sm font-light text-gray-500 dark:text-blue-400">
+                      Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+                  </p>
             </div>
-          </div>
-          <div class="mt-2">
-            <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-          </div>
-        </div>
-  
-        <div>
-          <button type="submit" class="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 w-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
-        </div>
-      </form>
-  
-      <p class="mt-5 text-center text-sm text-gray-500">
-        Don't have account?
-        <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign up</a>
-      </p>
+        </form>
     </div>
-  </div>
-  </body>
-  </html>
+</div>
