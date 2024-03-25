@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        @vite('resources/css/app.css')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,5 +50,6 @@
                 e.name = e.name === 'menu' ? 'close' : 'menu'
                 navLinks.classList.toggle('top-[9%]')
             }
-        </script>
+                </script>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     </html>

@@ -10,7 +10,7 @@ use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\AddBarangController;
 
 Route::get('/', function () {
-    return view('navbar');
+    return view('dashboard');
 });
 
 Route::get('/login', function () {
@@ -27,7 +27,7 @@ Route::get('/view/add_barang.blade', function () {
 
 Route::get('/login', [LoginController::class, 'login']);
 Route::get('/register', [RegisterController::class, 'register']);
-Route::get('/dashboard  ', [NavbarController::class, 'dashboard']);
+// Route::get('/dashboard  ', [NavbarController::class, 'dashboard']);
 Route::get('/checkout', [CheckoutController::class, 'checkout']);
 Route::get('/cart', [CartController::class, 'cart']);
 Route::get('/halaman', [HalamanController::class, 'halaman']);
