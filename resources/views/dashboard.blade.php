@@ -10,9 +10,10 @@
 
 <body>
 @include('components.navbar')
-  <div class="max-w-2xl mx-auto">
+<br>
+  <div class="max-w-6xl mx-auto">
 	<div id="default-carousel" class="relative" data-carousel="static">
-        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+        <div class="overflow-hidden relative min-h-80 rounded-lg sm:min-h-64 xl:min-h-56 2xl:min-h-96">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
                 <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
@@ -45,6 +46,34 @@
             </span>
         </button>
     </div>
+    <br><br>
+
+    {{-- PRODUCT --}}
+    <div class="bg-white rounded-lg max-w-6xl">
+  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900 text-center">Recomended</h2>
+
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      <div class="group relative">
+        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+           <img src="{{ asset('images\\glowinkgambar1.jpeg') }}" alt="images">
+        </div>
+        <div class="mt-4 flex justify-between">
+          <div> 
+            <h3 class="text-sm text-gray-700">
+              <a href="#">
+                <span aria-hidden="true" class="absolute inset-0"></span>
+                Emina Bright Stuff Face Wash
+              </a>
+              <p class="mt-1 text-sm text-gray-500">Face Wash</p>
+              <p class="text-sm font-medium text-gray-900">Rp 55.000</p>
+            </h3>
+            
+          </div>
+          
+        </div>
+      </div>
+
 
 
 
