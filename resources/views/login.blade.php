@@ -4,12 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
- 
-</body>
-</html><div class="flex items-center justify-center min-h-screen bg-blue-100">
-    <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+
+<div class="font-[Poppins] flex items-center justify-center min-h-screen bg-[#A0CADB]">
+    <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg rounded-lg">
         <div class="flex justify-center">
         <img src="images/logo.png" class="w-64 h-auto"  alt="gambar3">
 

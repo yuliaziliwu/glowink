@@ -8,6 +8,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\kategoriController;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\AddBarangController;
+use App\Http\Controllers\detailprodukController;
 
 Route::get('/', function () {
     return view('dashboard');
@@ -32,4 +33,5 @@ Route::get('/checkout', [CheckoutController::class, 'checkout']);
 Route::get('/cart', [CartController::class, 'cart']);
 Route::get('/kategori', [kategoriController::class, 'kategori']);
 Route::get('/add_barang', [AddBarangController::class, 'add_barang']);
+Route::get('/detailproduk', [detailprodukController::class, 'detailproduk']);
 
